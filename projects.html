@@ -10,7 +10,8 @@
             background-color: #1e1e2e;
             color: #ffffff;
             margin: 0;
-            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
         }
 
         .center {
@@ -26,11 +27,15 @@
         }
 
         .mushncav-image {
-            width: 650px;
+            max-width: 650px;
+            max-height: 400px;
+            width: 100%;
+            height: auto;
         }
 
         .main {
             display: block;
+            overflow: auto;
         }
         
         .main-header {
@@ -49,7 +54,6 @@
         .body {
             text-align: center;
             padding: 20px;
-            overflow: auto;
         }
 
         .title-text {
@@ -96,7 +100,7 @@
         <div class="body">
             <h1>Projects</h1>
             <div class="content">
-                <h2>Mushrooms and Canverns Mod</h2>
+                <h2>Mushrooms and Caverns Mod</h2>
                 <img src="2024-09-21_19.43.45.png" alt="Glowing Mushroom Biome" class="mushncav-image">
                 <p>This project is about creating a unique biome in Minecraft with glowing mushrooms, custom mobs, new items, and more.</p>
                 <a href="https://github.com/rngkGit/mushncav" target="_blank">GitHub Repository</a>
