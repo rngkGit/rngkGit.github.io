@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rngk</title>
+    <title>Projects</title>
     <style>
         body {
             font-family: "Courier New", Courier, monospace;
@@ -21,32 +21,18 @@
             text-align: center;
         }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            50% { transform: rotate(360deg); }
-            100% { transform: rotate(720deg); }
-        }
-
-        @keyframes flash {
-            0%, 50%, 100% { opacity: 1; }
-            25%, 75% { opacity: 0; }
-        }
-
-        @keyframes slideIn {
-            0% { transform: translateY(100%); }
-            100% { transform: translateY(0); }
-        }
-
         .logo {
             width: 50px;
-            animation: spin 1s ease-in-out;
+        }
+
+        .mushncav-image {
+            width: 650px;
         }
 
         .main {
             display: block;
-            animation: slideIn 1s ease-in-out forwards;
         }
-
+        
         .main-header {
             display: flex;
             justify-content: space-evenly;
@@ -63,6 +49,7 @@
         .body {
             text-align: center;
             padding: 20px;
+            overflow: auto;
         }
 
         .title-text {
@@ -72,7 +59,6 @@
 
         .main-header .ascii-small {
             font-size: 1.5em;
-            animation: flash 1s linear;
             cursor: pointer;
             display: block;
             padding: 10px;
@@ -108,9 +94,12 @@
     <!-- Main Page -->
     <div class="main">
         <div class="body">
-            <h1>Welcome to my website!</h1>
+            <h1>Projects</h1>
             <div class="content">
-                <h2>Here you can view my Projects with some detail and some background information as well as an About Me section.</h2>
+                <h2>Mushrooms and Canverns Mod</h2>
+                <img src="2024-09-21_19.43.45.png" alt="Glowing Mushroom Biome" class="mushncav-image">
+                <p>This project is about creating a unique biome in Minecraft with glowing mushrooms, custom mobs, new items, and more.</p>
+                <a href="https://github.com/rngkGit/mushncav" target="_blank">GitHub Repository</a>
             </div>
         </div>
     </div>
